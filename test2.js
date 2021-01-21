@@ -1,23 +1,18 @@
-var colourChanger = document.getElementById("colour-changer");
-var colours = ["red", "blue", "green", "pink"];
-var counter = 0;
-
-function changeColour(){
-
-    if (counter >= colours.length){
-        counter = 0;
-    }
-
-    colourChanger.style.background = colours[counter];
-    counter++;
-
+myForm.name.value
+"nkarol"
+myForm.colour.value
+"Red"
+myForm.colour.value
+"Blue"
+myForm.name.onfocus = function(){
+    myForm.name.style.border = "4px solid pink";
 }
-
-var myTimer = setInterval(changeColour, 3000);
-
-colourChanger.onclick = function(){
-
-    clearInterval(myTimer);
-    colourChanger.innerHTML = "Timer stopped";
-
-};
+ƒ (){
+    myForm.name.style.border = "4px solid pink";
+}
+myForm.name.onblur = function(){
+    myForm.name.style.border = "none";
+}
+ƒ (){
+    myForm.name.style.border = "none";
+}
