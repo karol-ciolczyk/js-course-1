@@ -1,17 +1,15 @@
-function getAverage(a,b,c,d){
+var a = 6;
+var b = 6;
 
-    var average = (a + b + c + d) / 2;
-    console.log(average);
-    return average;
+var fun = a * b;
 
+if (!isNaN(a)){
 
+    console.log("this is not a number");
+
+}  else {
+
+    console.log("meaning life is so long " + fun);
 }
 
-var myResult = getAverage(7,8,82,29);
-
-function newResult(){
-
-    console.log("you are stuoid girl and You have age " + myResult)
-}
-
-newResult()
+console.log(fun)
