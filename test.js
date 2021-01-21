@@ -1,22 +1,12 @@
-var newLi = document.createElement("li");
+var parent = document.getElementById("main-navigation").getElementsByTagName("ul")[0];
 undefined
-newLi
-<li>​</li>​
-var newA = document.createElement("a");
+parent
+<ul>​…​</ul>​
+var child = parent.getElementsByTagName("li")[0];
 undefined
-newA
-<a>​</a>​
-var menu = document.getElementById("main-navigation").getElementsByTagName("ul")[0];
+child
+<li>​<a href=​"#" class=​"current">​Bikes​</a>​</li>​
+var removed = parent.removeChild(child);
 undefined
-menu
-<ul>​…​</ul>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​</ul>​
-menu.appendChild(newLi);
-<li>​</li>​
-newLi.appendChild(newA);
-<a>​</a>​
-newA.innerHTML = "News";
-"News"
-menu.insertBefore(newLi, menu.getElementsByTagName("li")[0];
-VM8172:1 Uncaught SyntaxError: missing ) after argument list
-menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);
-<li>​…​</li>​<a>​News​</a>​</li>​
+parent.appendChild(removed);
+<li>​…​</li>​
