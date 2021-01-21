@@ -8,4 +8,10 @@ function getAverage(a,b,c,d){
 }
 
 var myResult = getAverage(7,8,82,29);
-console.log("the average is " + myResult);
+
+function newResult(){
+
+    console.log("you are stuoid girl and You have age " + myResult)
+}
+
+newResult()
