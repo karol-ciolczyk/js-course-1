@@ -1,12 +1,25 @@
-var parent = document.getElementById("main-navigation").getElementsByTagName("ul")[0];
+Uncaught SyntaxError: Invalid or unexpected token
+var title = document.getElementsById("title-footer");
+VM12662:1 Uncaught TypeError: document.getElementsById is not a function
+    at <anonymous>:1:22
+(anonymous) @ VM12662:1
+var title = document.getElementById("title-footer");
 undefined
-parent
-<ul>​…​</ul>​
-var child = parent.getElementsByTagName("li")[0];
-undefined
-child
-<li>​<a href=​"#" class=​"current">​Bikes​</a>​</li>​
-var removed = parent.removeChild(child);
-undefined
-parent.appendChild(removed);
-<li>​…​</li>​
+title
+<h2 id=​"title-footer">​Hello World​</h2>​
+title.onclick = function(){
+        alert("you click here");
+
+};
+ƒ (){
+        alert("you click here");
+
+}
+title.onmouseover = function(){
+    alert("you good man");
+
+};
+ƒ (){
+    alert("you good man");
+
+}
